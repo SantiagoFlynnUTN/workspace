@@ -12,6 +12,8 @@ public class Notas {
 	 * encapsulamiento
 	 * atributo
 	 * herencia
+	 * composicion
+	 * interfaz
 	 * polimorfismo
 	 * 
 	 * 
