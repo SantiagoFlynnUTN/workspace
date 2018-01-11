@@ -6,7 +6,15 @@ public abstract class Contacto {
 	private long numero;
 	private int myId;
 	private static int id=0;
+	int a;
 
+	public void setter(int a){
+		this.a = a;
+	}
+	public int getter(){
+		return a;
+	}
+	
 	public Contacto(String nombre, long numero) {
 
 		this.nombre = nombre;
@@ -21,7 +29,12 @@ public abstract class Contacto {
 		this.apellido = apellido;
 		this.numero = numero;
 		myId = id++;
+			
+	}
+
+	public static int getId(){
 		
+		return id;
 	}
 	
 	public static void saludo(){
