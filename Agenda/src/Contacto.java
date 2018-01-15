@@ -15,6 +15,10 @@ public abstract class Contacto {
 		return a;
 	}
 	
+	public String toString(){
+		return nombre;
+	}
+	
 	public Contacto(String nombre, long numero) {
 
 		this.nombre = nombre;

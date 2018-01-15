@@ -3,8 +3,16 @@ package pruebas;
 public class Herencia extends Clase{
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//Gracias a la herencia se puede hacer esto.
 
+		Herencia objHerencia = new Herencia(2);
+		Clase objClase = new Clase(3);
+		
+		System.out.println();
+		
+		Clase objQuePasaComoClase = objHerencia;
+		
+		
 	}
 	
 	int num;

@@ -24,7 +24,6 @@ public class Main {
 		listaContactos[3] = new Otro("Nicolas", 15783337, "pasea perros");
 		listaContactos[4] = new Trabajo("Andrea", "Rincon", 15743287, "limpieza");
 		*/
-		
 		//for(Contacto c:listaContactos){
 		String a = new String(), b= new String();
 		a= "hola";
@@ -70,7 +69,9 @@ public class Main {
 				myList.add(c);
 			}
 			
-			System.out.println(myList.get(Contacto.getId()-1).dameInfo());
+			System.out.println(myList.getLast().dameInfo());
+			
+			
 			
 			String agregar1 = JOptionPane.showInputDialog("Desea agregar otro contacto (si o no): ");
 			agregar = agregar1.toUpperCase();
