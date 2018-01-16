@@ -1,5 +1,8 @@
 package ProgGenerica;
 
+import java.util.ArrayList;
+import java.lang.Math;
+
 public class UsoGenericas {
 	public static void main(String[] args){
 		
@@ -30,5 +33,21 @@ public class UsoGenericas {
 		otroObj.setter(unObj);
 		System.out.println(otroObj.getter().getter());
 		
+		ArrayList<Clase> unArray = new ArrayList<>();
+		
+		unArray.add(new Clase(8.9));
+		unArray.add(new Clase(2.6));
+		unArray.add(new Clase(7.2));
+		unArray.add(new Clase(5.4));
+		unArray.add(new Clase(Math.PI));
+		
+		Clase arrayEstatico[] = new Clase[unArray.size()];
+		
+		unArray.toArray(arrayEstatico);
+		
+		//pasar a toArray sirve para manejar el array "como siempre"
+		System.out.println(arrayEstatico[3]);
+		
+		System.out.println(ClaseNoGenerica.getMenor(arrayEstatico));		
 	}
 }

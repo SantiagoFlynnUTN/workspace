@@ -1,7 +1,7 @@
 package ProgGenerica;
 
 public class Clase implements Comparable {
-	private double atri1, atri2, atri3;
+	private double atri1;
 	
 	public int compareTo(Object obj){
 		Clase objCasteado = (Clase) obj;
@@ -12,16 +12,13 @@ public class Clase implements Comparable {
 		else return 0;
 	}
 	
-	public Clase(double atri1){
-		this.atri1 = atri1;
-		atri2 = 3;
-		atri3 = 42;
+	public String toString(){
+		String a = atri1 + "";
+		return a;
 	}
 	
-	public Clase(int atri1){
+	public Clase(double atri1){
 		this.atri1 = atri1;
-		atri2 = 3;
-		atri3 = 43;
 	}
 	
 	public void setter(int atri1){

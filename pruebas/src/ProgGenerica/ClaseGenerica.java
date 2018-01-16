@@ -16,8 +16,15 @@ public class ClaseGenerica<T> {
 	public void setter(T atributo){
 		this.atributo = atributo;
 	}
+	
+	public static void imprimirAtributoDeLaGenerica(ClaseGenerica<? extends Clase> unClase){
+		System.out.println(unClase.getter());
+	}
 }
 
+
+
+//lo unico rescatable es esto
 class ClaseNoGenerica{
 	
 	//metodo generico
@@ -35,11 +42,6 @@ class ClaseNoGenerica{
 				minimo = arr[i];
 		}
 		
-		return minimo;
+		return minimo; //es de tipo T.
 	}
-	
-	public static void imprimirAtributoDeLaGenerica(ClaseGenerica<? extends Clase> unClase){
-		System.out.println(unClase.getter());
-	}
-	
 }
