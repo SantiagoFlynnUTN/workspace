@@ -1,6 +1,7 @@
 package ProgGenerica;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.lang.Math;
 
 public class UsoGenericas {
@@ -40,6 +41,14 @@ public class UsoGenericas {
 		unArray.add(new Clase(7.2));
 		unArray.add(new Clase(5.4));
 		unArray.add(new Clase(Math.PI));
+		
+		
+		Iterator<Clase> mi_iterador = unArray.iterator();
+		
+		while (mi_iterador.hasNext()) { // hasNext() apunta al primero
+			System.out.println(mi_iterador.next().getter()); // next()
+			mi_iterador.remove(); // remove() elimina el elemento del array
+		}
 		
 		Clase arrayEstatico[] = new Clase[unArray.size()];
 		
