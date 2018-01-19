@@ -14,7 +14,8 @@ public class Notas {
 	 * herencia
 	 * composicion
 	 * interfaz
-	 * polimorfismo
+	 * polimorfismo Empleado array[] = un array con empleado, jefe, y director, donde se pueden 
+	 * ejecutar metodos pertenecientes a empleado. 
 	 * 
 	 * 
 	 * Cosas:
@@ -48,10 +49,6 @@ public class Notas {
 	 * 
 	 * 
 	 * Proyecto: Agenda de contactos
-	 * 
-	 * clases: agenda, contacto
-	 * subclases: contactoTrabajo, amigo, otro
-	 * interfaces: ver...
 	 * 
 	 * */
 

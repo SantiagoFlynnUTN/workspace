@@ -7,7 +7,7 @@ public class CastingDeObjetos {
 		
 		//entonces podemos usarlas todas como si fueran clases, siendo q una es herencia
 		for(Clase c:clases){
-			c.getter();
+		System.out.println(c.getter());
 		}
 		
 		//ahora imaginemos que queremos hacer algo con un metodo propio de herencia.

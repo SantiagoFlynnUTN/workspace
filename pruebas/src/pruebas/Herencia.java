@@ -8,7 +8,7 @@ public class Herencia extends Clase{
 		Herencia objHerencia = new Herencia(2);
 		Clase objClase = new Clase(3);
 		
-		System.out.println();
+		System.out.println("asdasd");
 		
 		Clase objQuePasaComoClase = objHerencia;
 		

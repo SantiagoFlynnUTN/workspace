@@ -33,7 +33,7 @@ public class Item1_FactoryMethods {
 	
 	public static void main(String[] args){
 	
-	Complex c = Complex.fromPolar(1, Math.PI/4);
+	Complex c = Complex.fromPolar(1, Math.PI);
 	System.out.println(c);
 	}
 }
