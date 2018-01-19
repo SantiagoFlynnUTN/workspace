@@ -1,5 +1,7 @@
-package pruebas;
+package Collections;
 import java.util.*;
+
+import pruebas.Clase;
 
 public class ArrayLists {
 
