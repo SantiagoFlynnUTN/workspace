@@ -1,8 +1,5 @@
 package Cap1;
 
-//import java.lang.Math;
-import java.lang.*;
-
 class Complex {
 	
 	private double im, re;
@@ -33,7 +30,7 @@ public class Item1_FactoryMethods {
 	
 	public static void main(String[] args){
 	
-	Complex c = Complex.fromPolar(1, Math.PI);
+	Complex c = Complex.fromPolar(1, Math.PI/4);
 	System.out.println(c);
 	}
 }
